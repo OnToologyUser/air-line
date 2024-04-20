@@ -1,0 +1,34 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://dbpedia.org/ontology/Airline" "base:Destination" "base:positiveSentiments" "base:Passenger" "base:NegativeSentiments" "base:EconomyClass" "base:Origin" "base:Business" "base:QatarAirways" "base:FamilyLeisure" "http://dbpedia.org/ontology/Country" "base:NeutralSentiments" "base:Country" "http://dbpedia.org/ontology/Aircraft" "base:SoloLeisure" "base:FirstClass" "base:Aircraft" "base:Comment" "base:Airline" "base:SeatType" "base:Ryanair" "base:BusinessClass" "base:SentimentAnalysis" "base:Review" "base:Flight" "base:CommentTitle" "base:PassengerType" "base:Author" ; /*classes style*/
+	"base:SentimentAnalysis" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:Ryanair" -> "base:Airline" [ label = "rdfs:subClassOf" ];
+	"base:positiveSentiments" -> "base:SentimentAnalysis" [ label = "rdfs:subClassOf" ];
+	"base:SoloLeisure" -> "base:PassengerType" [ label = "rdfs:subClassOf" ];
+	"base:BusinessClass" -> "base:SeatType" [ label = "rdfs:subClassOf" ];
+	"base:Country" -> "http://dbpedia.org/ontology/Country" [ label = "rdfs:subClassOf" ];
+	"http://dbpedia.org/ontology/Airline" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:Airline" -> "http://dbpedia.org/ontology/Airline" [ label = "rdfs:subClassOf" ];
+	"base:FamilyLeisure" -> "base:PassengerType" [ label = "rdfs:subClassOf" ];
+	"base:PassengerType" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:FirstClass" -> "base:SeatType" [ label = "rdfs:subClassOf" ];
+	"base:Passenger" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:Aircraft" -> "http://dbpedia.org/ontology/Aircraft" [ label = "rdfs:subClassOf" ];
+	"base:Comment" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:SeatType" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:Flight" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"base:NegativeSentiments" -> "base:SentimentAnalysis" [ label = "rdfs:subClassOf" ];
+	"base:Destination" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:QatarAirways" -> "base:Airline" [ label = "rdfs:subClassOf" ];
+	"base:Review" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"http://dbpedia.org/ontology/Aircraft" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"http://dbpedia.org/ontology/Country" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:NeutralSentiments" -> "base:SentimentAnalysis" [ label = "rdfs:subClassOf" ];
+	"base:Author" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:Origin" -> "base:Flight" [ label = "rdfs:subClassOf" ];
+	"base:EconomyClass" -> "base:SeatType" [ label = "rdfs:subClassOf" ];
+	"base:Business" -> "base:PassengerType" [ label = "rdfs:subClassOf" ];
+	"base:CommentTitle" -> "base:Review" [ label = "rdfs:subClassOf" ];
+
+}

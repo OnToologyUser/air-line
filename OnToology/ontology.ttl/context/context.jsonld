@@ -1,0 +1,241 @@
+{
+  "@context" : {
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI"
+    },
+    "hasQatarAirline" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasQatarAirline",
+      "@type" : "@id"
+    },
+    "valueForMoney" : {
+      "@id" : "https://w3id.org/def/airlinereviews#valueForMoney",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Review" : {
+      "@id" : "https://w3id.org/def/airlinereviews#Review"
+    },
+    "NegativeSentiments" : {
+      "@id" : "https://w3id.org/def/airlinereviews#NegativeSentiments"
+    },
+    "Country" : {
+      "@id" : "http://dbpedia.org/ontology/Country"
+    },
+    "wifiAndConnectivity" : {
+      "@id" : "https://w3id.org/def/airlinereviews#wifiAndConnectivity",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Comment" : {
+      "@id" : "https://w3id.org/def/airlinereviews#Comment"
+    },
+    "hasAircraft" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasAircraft",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hasSentimentAnalysis" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasSentimentAnalysis",
+      "@type" : "@id"
+    },
+    "age" : {
+      "@id" : "https://w3id.org/def/airlinereviews#age",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasComment" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasComment",
+      "@type" : "@id"
+    },
+    "hasBusinessClass" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasBusinessClass",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "foodAndBeverages" : {
+      "@id" : "https://w3id.org/def/airlinereviews#foodAndBeverages",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Destination" : {
+      "@id" : "https://w3id.org/def/airlinereviews#Destination"
+    },
+    "hasCommentTitle" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasCommentTitle",
+      "@type" : "@id"
+    },
+    "hasReview" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasReview",
+      "@type" : "@id"
+    },
+    "Origin" : {
+      "@id" : "https://w3id.org/def/airlinereviews#Origin"
+    },
+    "FirstClass" : {
+      "@id" : "https://w3id.org/def/airlinereviews#FirstClass"
+    },
+    "id" : {
+      "@id" : "https://w3id.org/def/airlinereviews#id",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "gender" : {
+      "@id" : "https://w3id.org/def/airlinereviews#gender",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Business" : {
+      "@id" : "https://w3id.org/def/airlinereviews#Business"
+    },
+    "groundService" : {
+      "@id" : "https://w3id.org/def/airlinereviews#groundService",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "toDestination" : {
+      "@id" : "https://w3id.org/def/airlinereviews#toDestination",
+      "@type" : "@id"
+    },
+    "hasFirstClass" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasFirstClass",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "https://w3id.org/def/airlinereviews#name"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "QatarAirways" : {
+      "@id" : "https://w3id.org/def/airlinereviews#QatarAirways"
+    },
+    "hasFlight" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasFlight",
+      "@type" : "@id"
+    },
+    "SentimentAnalysis" : {
+      "@id" : "https://w3id.org/def/airlinereviews#SentimentAnalysis"
+    },
+    "Passenger" : {
+      "@id" : "https://w3id.org/def/airlinereviews#Passenger"
+    },
+    "hasAuthor" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasAuthor",
+      "@type" : "@id"
+    },
+    "FamilyLeisure" : {
+      "@id" : "https://w3id.org/def/airlinereviews#FamilyLeisure"
+    },
+    "Aircraft" : {
+      "@id" : "http://dbpedia.org/ontology/Aircraft"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "hasRyanairAirline" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasRyanairAirline",
+      "@type" : "@id"
+    },
+    "Ryanair" : {
+      "@id" : "https://w3id.org/def/airlinereviews#Ryanair"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "datePublished" : {
+      "@id" : "https://w3id.org/def/airlinereviews#datePublished",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Airline" : {
+      "@id" : "https://w3id.org/def/airlinereviews#Airline"
+    },
+    "fromOrigin" : {
+      "@id" : "https://w3id.org/def/airlinereviews#fromOrigin",
+      "@type" : "@id"
+    },
+    "Flight" : {
+      "@id" : "https://w3id.org/def/airlinereviews#Flight"
+    },
+    "Author" : {
+      "@id" : "https://w3id.org/def/airlinereviews#Author"
+    },
+    "cabinStaffService" : {
+      "@id" : "https://w3id.org/def/airlinereviews#cabinStaffService",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "positiveSentiments" : {
+      "@id" : "https://w3id.org/def/airlinereviews#positiveSentiments"
+    },
+    "seatComfort" : {
+      "@id" : "https://w3id.org/def/airlinereviews#seatComfort",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "recommended" : {
+      "@id" : "https://w3id.org/def/airlinereviews#recommended",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "EconomyClass" : {
+      "@id" : "https://w3id.org/def/airlinereviews#EconomyClass"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "rating" : {
+      "@id" : "https://w3id.org/def/airlinereviews#rating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "SoloLeisure" : {
+      "@id" : "https://w3id.org/def/airlinereviews#SoloLeisure"
+    },
+    "CommentTitle" : {
+      "@id" : "https://w3id.org/def/airlinereviews#CommentTitle"
+    },
+    "BusinessClass" : {
+      "@id" : "https://w3id.org/def/airlinereviews#BusinessClass"
+    },
+    "hasEconomyClass" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasEconomyClass",
+      "@type" : "@id"
+    },
+    "inflightEntertainment" : {
+      "@id" : "https://w3id.org/def/airlinereviews#inflightEntertainment",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "nationality" : {
+      "@id" : "https://w3id.org/def/airlinereviews#nationality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "tripVerificationStatus" : {
+      "@id" : "https://w3id.org/def/airlinereviews#tripVerificationStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasCountry" : {
+      "@id" : "https://w3id.org/def/airlinereviews#hasCountry",
+      "@type" : "@id"
+    },
+    "SeatType" : {
+      "@id" : "https://w3id.org/def/airlinereviews#SeatType"
+    },
+    "isPassenger" : {
+      "@id" : "https://w3id.org/def/airlinereviews#isPassenger",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "dateFlown" : {
+      "@id" : "https://w3id.org/def/airlinereviews#dateFlown",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "NeutralSentiments" : {
+      "@id" : "https://w3id.org/def/airlinereviews#NeutralSentiments"
+    },
+    "PassengerType" : {
+      "@id" : "https://w3id.org/def/airlinereviews#PassengerType"
+    }
+  }
+}
